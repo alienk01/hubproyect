@@ -73,9 +73,16 @@
         }
 
         .logo {
-            font-size: 72px;
-            margin-bottom: 10px;
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 20px auto;
             animation: pulse 2s ease-in-out infinite;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
         }
 
         @keyframes pulse {
@@ -86,18 +93,15 @@
         .company-name {
             font-size: 48px;
             font-weight: bold;
-            background: linear-gradient(45deg, #ef4444, #dc2626, #b91c1c, #991b1b);
-            background-size: 300% 300%;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            animation: gradient 3s ease infinite;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
             margin-bottom: 10px;
+            animation: titleGlow 3s ease infinite;
         }
 
-        @keyframes gradient {
-            0%, 100% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
+        @keyframes titleGlow {
+            0%, 100% { text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 0 0 10px rgba(255, 255, 255, 0.3); }
+            50% { text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 255, 255, 0.6); }
         }
 
         .slogan {
@@ -366,15 +370,17 @@
         </div>
 
         <div class="header">
-            <div class="logo">🚗💫</div>
+            <div class="logo">
+                <img src="novas1uber.png" alt="Novas Ubers Logo" />
+            </div>
             <h1 class="company-name">NOVAS UBER</h1>
-            <p class="slogan">"Tu futuro comienza aquí"</p>
+            <p class="slogan">"trabajo honesto y sencillo"</p>
         </div>
-
+        
         <div class="call-to-action">
             <div class="cta-text">¿BUSCAS TRABAJO?</div>
             <div style="font-size: 20px; color: rgba(255,255,255,0.9);">
-                ¡Únete al equipo mas grande de transporte de GTAhub!
+                ¡Únite al equipo mas grande de transporte de GTAhub!
             </div>
         </div>
 
